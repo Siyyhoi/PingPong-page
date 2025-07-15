@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 
 export default function Navbar() {
@@ -16,7 +17,7 @@ export default function Navbar() {
       <div className="max-w-screen-xl mx-auto px-4 py-3 flex justify-between items-center">
         {/* Logo */}
         <a href="/" className="flex items-center space-x-3">
-          <img src="/img/PingPong.png" className="h-14" alt="PingPong Logo" />
+          <Image src="/img/PingPong.png" className="h-14" alt="PingPong Logo" />
           <span className="text-2xl font-bold text-blue-700 dark:text-white">PingPong</span>
         </a>
 
